@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <script src='javascripts/fb_login.js'></script>
+
+        <h1><%= title %></h1>
+
+        <fb:login-button scope="public_profile,manage_notifications,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div id="status">
+        </div>
+
+    </body>
+</html>
